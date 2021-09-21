@@ -1,22 +1,20 @@
-# (TODO: your game's title)
+# Eating in Order
 
-Author: (TODO: your name)
+Author: Wish Kuo
 
-Design: (TODO: In two sentences or fewer, describe what is new and interesting about your game.)
+Design: You are attending a big eater! However, while approaching to the end of the game, you are required to finish the last four dishes in order.
 
 Screen Shot:
 
-![Screen Shot](screenshot.png)
-
-How Your Asset Pipeline Works:
-
-(TODO: describe the steps in your asset pipeline, from source files to tiles/backgrounds/whatever you upload to the PPU466.)
+![Screen Shot](game.png)
 
 How To Play:
 
-(TODO: describe the controls and (if needed) goals/strategy.)
+Use W/D to select the dish, and select the dish that matches the task. Try to finish as soon as possible! There's a timer indicates how well you've done.
 
-Sources: (TODO: list a source URL for any assets you did not create yourself. Make sure you have a license for the asset.)
+Sources: 
+- brunch.blend: provided with base code in scenes
+- text drawer: provided with base code
 
 This game was built with [NEST](NEST.md).
 

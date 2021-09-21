@@ -28,15 +28,31 @@ struct PlayMode : Mode {
 	Scene scene;
 
 	//hexapod leg to wobble:
-	Scene::Transform *hip = nullptr;
-	Scene::Transform *upper_leg = nullptr;
-	Scene::Transform *lower_leg = nullptr;
-	glm::quat hip_base_rotation;
-	glm::quat upper_leg_base_rotation;
-	glm::quat lower_leg_base_rotation;
+	//Scene::Transform *hip = nullptr;
+	//Scene::Transform *upper_leg = nullptr;
+	//Scene::Transform *lower_leg = nullptr;
+	//glm::quat hip_base_rotation;
+	//glm::quat upper_leg_base_rotation;
+	//glm::quat lower_leg_base_rotation;
 	float wobble = 0.0f;
 	
+	Scene::Transform *cake = nullptr;
+	Scene::Transform *cakePlate = nullptr;
+	Scene::Transform *eggBaconPlate = nullptr;
+	Scene::Transform *pancakePlate = nullptr;
+	Scene::Transform *sandwichPlate = nullptr;
+
+	const char *foodList[4] = {"sandwichPlate", "cakePlate", "pancakePlate", "eggBaconPlate"};
+	int food_counter = 0;
+	bool sandwichPlate_eaten = false;
+	bool cakePlate_eaten = false;
+	bool pancakePlate_eaten = false;
+	bool eggBaconPlate_eaten = false;
+
+	int current_menu=0; //"cakePlate", "eggBaconPlate", "sandwichPlate", "pancakePlate"
+
 	//camera:
 	Scene::Camera *camera = nullptr;
 
+	float currentTimer = 0.0f;
 };
